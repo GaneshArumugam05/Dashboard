@@ -1,0 +1,51 @@
+{
+  "cards": [
+    { "title": "Users", "value": 1200, "icon": "FaUsers", "trend": 2.3 },
+    { "title": "Orders", "value": 350, "icon": "FaShoppingCart", "trend": -1.2 },
+    { "title": "Revenue", "value": "$24,000", "icon": "FaMoneyBill", "trend": 3.6 },
+    { "title": "Courses", "value": 76, "icon": "FaBook", "trend": 0.4 }
+  ],
+  "barChart": [
+    { "name": "Jan", "uv": 400 },
+    { "name": "Feb", "uv": 300 },
+    { "name": "Mar", "uv": 500 },
+    { "name": "Apr", "uv": 700 }
+  ],
+  "pieChart": [
+    { "name": "A", "value": 200 },
+    { "name": "B", "value": 100 },
+    { "name": "C", "value": 300 }
+  ],
+  "lineChart": [
+    { "name": "Mon", "uv": 100 },
+    { "name": "Tue", "uv": 400 },
+    { "name": "Wed", "uv": 300 }
+  ],
+  "table": [
+    { "id": 1, "name": "Item 1", "status": "Active", "value": 123 },
+    { "id": 2, "name": "Item 2", "status": "Pending", "value": 250 },
+    { "id": 3, "name": "Item 3", "status": "Inactive", "value": 300 },
+    { "id": 4, "name": "Item 4", "status": "Active", "value": 123 },
+    { "id": 5, "name": "Item 5", "status": "Pending", "value": 250 },
+    { "id": 6, "name": "Item 6", "status": "Inactive", "value": 300 },
+    { "id": 7, "name": "Item 7", "status": "Active", "value": 123 },
+    { "id": 8, "name": "Item 8", "status": "Pending", "value": 250 },
+    { "id": 9, "name": "Item 9", "status": "Inactive", "value": 300 },
+    { "id": 10, "name": "Item 10", "status": "Active", "value": 123 },
+    { "id": 11, "name": "Item 11", "status": "Pending", "value": 250 },
+    { "id": 12, "name": "Item 12", "status": "Pending", "value": 250 },
+    { "id": 13, "name": "Item 13", "status": "Inactive", "value": 300 },
+    { "id": 14, "name": "Item 14", "status": "Active", "value": 123 },
+    { "id": 15, "name": "Item 15", "status": "Pending", "value": 250 },
+    { "id": 16, "name": "Item 16", "status": "Inactive", "value": 300 },
+    { "id": 17, "name": "Item 17", "status": "Active", "value": 123 },
+    { "id": 18, "name": "Item 18", "status": "Pending", "value": 250 },
+    { "id": 19, "name": "Item 19", "status": "Inactive", "value": 300 },
+    { "id": 20, "name": "Item 20", "status": "Active", "value": 123 },
+    { "id": 21, "name": "Item 21", "status": "Pending", "value": 250 },
+    { "id": 22, "name": "Item 22", "status": "Inactive", "value": 300 },
+    { "id": 23, "name": "Item 23", "status": "Active", "value": 123 },
+    { "id": 24, "name": "Item 24", "status": "Pending", "value": 250 },
+    { "id": 25, "name": "Item 25", "status": "Inactive", "value": 300 }
+  ]
+}
