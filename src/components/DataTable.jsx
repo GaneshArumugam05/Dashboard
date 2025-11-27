@@ -25,30 +25,31 @@ function DataTable({ rows }) {
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow p-4 mt-8 overflow-x-auto">
-
       {/* Table */}
       <table className="min-w-full table-auto">
         <thead>
           <tr className="bg-gray-100 dark:bg-gray-700">
-            <th className="text-left p-2">Name</th>
-            <th className="text-left p-2">Status</th>
-            <th className="text-left p-2">Value</th>
+            <th className="text-left p-2 text-gray-900 dark:text-gray-100">Name</th>
+            <th className="text-left p-2 text-gray-900 dark:text-gray-100">Status</th>
+            <th className="text-left p-2 text-gray-900 dark:text-gray-100">Value</th>
           </tr>
         </thead>
 
         <tbody>
           {currentRows.map((row) => (
             <tr key={row.id} className="border-b dark:border-gray-700">
-              <td className="p-2">{row.name}</td>
+              <td className="p-2 text-gray-900 dark:text-gray-100">{row.name}</td>
 
               {/* Status with color badge */}
               <td className="p-2">
-                <span className={`px-3 py-1 text-sm rounded-full font-medium ${getStatusColor(row.status)}`}>
+                <span
+                  className={`px-3 py-1 text-sm rounded-full font-medium ${getStatusColor(row.status)}`}
+                >
                   {row.status}
                 </span>
               </td>
 
-              <td className="p-2">{row.value}</td>
+              <td className="p-2 text-gray-900 dark:text-gray-100">{row.value}</td>
             </tr>
           ))}
         </tbody>
@@ -56,10 +57,9 @@ function DataTable({ rows }) {
 
       {/* Pagination */}
       <div className="flex items-center justify-between mt-4">
-        
         {/* Prev Button */}
         <button
-          className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 disabled:opacity-40"
+          className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 disabled:opacity-40"
           onClick={() => setCurrentPage((prev) => prev - 1)}
           disabled={currentPage === 1}
         >
@@ -67,19 +67,18 @@ function DataTable({ rows }) {
         </button>
 
         {/* Page Indicator */}
-        <span className="text-sm text-gray-600 dark:text-gray-300">
+        <span className="text-sm text-gray-900 dark:text-gray-100">
           Page {currentPage} of {totalPages}
         </span>
 
         {/* Next Button */}
         <button
-          className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 disabled:opacity-40"
+          className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 disabled:opacity-40"
           onClick={() => setCurrentPage((prev) => prev + 1)}
           disabled={currentPage === totalPages}
         >
           Next
         </button>
-
       </div>
     </div>
   );
